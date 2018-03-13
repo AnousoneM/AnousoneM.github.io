@@ -21,7 +21,7 @@ h4 {
 .jumbotron {
     background-color: #66A5AD;
     color: #fff;
-    padding: 100px 25px;
+    padding: 25px 25px;
     font-family: Montserrat, sans-serif;
 }
 
@@ -42,7 +42,6 @@ h4 {
     color: #f4511e;
     font-size: 200px;
 }
-
 
 .carousel-control.right, .carousel-control.left {
     background-image: none;
