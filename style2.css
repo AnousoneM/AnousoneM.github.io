@@ -175,8 +175,7 @@ h4 {
 
 .conteneur_timeline{
   overflow: hidden;
-  width: 90%;
-  max-width: 1200px;
+  width: 100%;
   margin: 0 auto;
   text-align: center;
   background-color: #66A5AD;
@@ -319,6 +318,6 @@ time {
   .timeline ul li:nth-child(even) div::before {
     left: -15px;
     border-width: 8px 16px 8px 0;
-    border-color: transparent #F45B69 transparent transparent;/*Fleche vers la gauche en mode smartphone */
+    border-color: transparent #C4DFE6 transparent transparent;/*Fleche vers la gauche en mode smartphone */
   }
 }
