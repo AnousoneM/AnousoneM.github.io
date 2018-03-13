@@ -35,14 +35,8 @@ h4 {
     background-color: #EDF6F7;
 }
 
-.logo-small {
-    color: #f4511e;
-    font-size: 50px;
-}
-
-.logo {
-    color: #f4511e;
-    font-size: 200px;
+#competences img{
+  height: 80px;
 }
 
 .carousel-control.right, .carousel-control.left {
