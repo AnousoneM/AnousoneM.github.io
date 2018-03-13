@@ -16,7 +16,7 @@
 </head>
 <body id="myPage" data-spy="scroll" data-target=".navbar" data-offset="60">
 <header>
-<!--Navbar Responsive-->
+<!-- NAVBAR RESPONSIVE  -->
 <nav class="navbar navbar-default navbar-fixed-top">
   <div class="container">
     <div class="navbar-header">
@@ -39,7 +39,7 @@
   </div>
 </nav>
 
-<!-- EN TETE DE MON SITE -->
+<!-- DIV EN TETE DE MON SITE -->
 <div class="row">
   <img class="img-responsive" src="images/surf.jpg" alt="Surfboard">
   <div class="jumbotron">
@@ -49,7 +49,7 @@
 </div>
 </header>
 
-<!-- ABOUT : A PROPOS  -->
+<!-- DIV ABOUT : A PROPOS  -->
 <div id="about" class="container-fluid">
   <div class="row">
     <div class="col-sm-8">
@@ -64,7 +64,7 @@
   </div>
 </div>
 
-<!-- EXPERIENCE EN MODE CAROUSEL -->
+<!-- DIV EXPERIENCE EN MODE CAROUSEL -->
 <div id="experience" class="container-fluid text-center bg-grey">
   <h2>EXPERIENCE</h2>
   <div id="myCarousel" class="carousel slide text-center" data-ride="carousel">
@@ -100,9 +100,10 @@
   </div>
 </div>
 
-<!-- COMPETENCES / Language, OS, Etc -->
+<!-- DIV COMPETENCES / Language, OS, Etc -->
 <div id="competences" class="container-fluid text-center">
   <h2>COMPETENCES</h2>
+  <!--OS et Systeme d'exploitation-->
   <h4>OS / Système d'exploitation</h4>
   <div class="row slideanim">
     <div class="col-sm-3"></div>
@@ -124,6 +125,7 @@
     <div class="col-sm-3"></div>
   </div>
   <br>
+  <!--Versionning -->
   <h4>Versionning</h4>
   <div class="row slideanim">
     <div class="col-sm-4"></div>
@@ -140,6 +142,7 @@
     <div class="col-sm-4"></div>
   </div>
   <br>
+  <!--Langage et Library -->
   <h4>Languages & Library</h4>
   <div class="row slideanim">
     <div class="col-sm-3"></div>
@@ -161,6 +164,7 @@
     <div class="col-sm-3"></div>
   </div>
   <br>
+  <!--Logiciels -->
   <h4>Logiciels</h4>
   <div class="row slideanim">
     <div class="col-sm-3"></div>
@@ -184,23 +188,54 @@
 </div>
 
 
-<!-- PARCOURS / TIMELINE -->
-<div id="parcours" class="container-fluid bg-grey">
-    <h2 class="text-center">PARCOURS EN TIMELINE</h2>
-    <div class="row">
-
-    </div>
+<!-- DIV PARCOURS / TIMELINE -->
+<div id="parcours" class="conteneur_timeline">
+  <h2>EXPERIENCE</h2>
+  <div class="timeline">
+    <ul><!--Debut du contenu de la timeline-->
+      <li>
+        <div>
+          <time>1967</time>
+          <p>Aenean condimentum odio a bibendum rhoncus. Ut mauris felis, volutpat eget porta faucibus, euismod quis ante.</p>
+        </div>
+      </li>
+      <li>
+        <div>
+          <time>1977</time>
+          <p>Vestibulum porttitor lorem sed pharetra dignissim. Nulla maximus, dui a tristique iaculis, quam dolor convallis enim</p>
+        </div>
+      </li>
+      <li>
+        <div>
+          <time>1985</time>
+          <p>In mattis elit vitae odio posuere, nec maximus massa varius. Suspendisse varius volutpat mattis. Vestibulum id magna est.</p>
+        </div>
+      </li>
+      <li>
+        <div>
+          <time>2000</time>
+          <p>In mattis elit vitae odio posuere, nec maximus massa varius. Suspendisse varius volutpat mattis. Vestibulum id magna est.</p>
+        </div>
+      </li>
+      <li>
+        <div>
+          <time>2005</time>
+          <p>In mattis elit vitae odio posuere, nec maximus massa varius. Suspendisse varius volutpat mattis. Vestibulum id magna est.</p>
+        </div>
+      </li>
+    </ul><!--fin du contenu de la timeline-->
+  </div>
 </div>
 
 
-<!-- CONTACT SECTION , MAIL, CV -->
+<!-- DIV CONTACT SECTION , MAIL, CV -->
 <div id="contact" class="container-fluid">
   <h2 class="text-center">CONTACT</h2>
   <div class="row">
   </div>
 </div>
 
-<!-- FOOTER / COPYRIGHT / -->
+<!-- DIV FOOTER / COPYRIGHT / -->
 <footer id="copyright" class="container-fluid text-center">
   <a href="#myPage" title="To go Top">
     <span class="glyphicon glyphicon-chevron-up"></span>
@@ -244,6 +279,43 @@ $(document).ready(function(){
     });
   });
 })
+</script>
+
+<!--Script de la Timeline-->
+<script>
+(function() {
+
+  'use strict';
+
+  // define variables
+  var items = document.querySelectorAll(".timeline li");
+
+  // check if an element is in viewport
+  // http://stackoverflow.com/questions/123999/how-to-tell-if-a-dom-element-is-visible-in-the-current-viewport
+  function isElementInViewport(el) {
+    var rect = el.getBoundingClientRect();
+    return (
+      rect.top >= 0 &&
+      rect.left >= 0 &&
+      rect.bottom <= (window.innerHeight || document.documentElement.clientHeight) &&
+      rect.right <= (window.innerWidth || document.documentElement.clientWidth)
+    );
+  }
+
+  function callbackFunc() {
+    for (var i = 0; i < items.length; i++) {
+      if (isElementInViewport(items[i])) {
+        items[i].classList.add("in-view");
+      }
+    }
+  }
+
+  // listen for events
+  window.addEventListener("load", callbackFunc);
+  window.addEventListener("resize", callbackFunc);
+  window.addEventListener("scroll", callbackFunc);
+
+})();
 </script>
 
 </body>
