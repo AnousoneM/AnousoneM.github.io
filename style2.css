@@ -18,7 +18,7 @@ h2 {
     margin-bottom: 30px;
 }
 
-h4 {
+h3 {
     font-size: 19px;
     line-height: 1.375em;
     color: #303030;
@@ -170,9 +170,6 @@ h4 {
   text-align: center;
   overflow-x: hidden;
 }
-
-/* TIMELINE
-–––––––––––––––––––––––––––––––––––––––––––––––––– */
 
 .timeline ul {
   background: #66A5AD; /* couleur de fond du background de la timeline */
