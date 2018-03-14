@@ -25,7 +25,7 @@
         <span class="icon-bar"></span>
         <span class="icon-bar"></span>
       </button>
-      <a class="navbar-brand" href="#myPage"><i class="fas fa-tint"></i></a>
+      <a class="navbar-brand" href="#myPage"><i class="far fa-moon"></i></a>
     </div>
     <div class="collapse navbar-collapse" id="myNavbar">
       <ul class="nav navbar-nav navbar-right">
@@ -40,7 +40,7 @@
 </nav>
 
 <!-- DIV EN TETE DE MON SITE -->
-<div class="row">
+<div class="row text-center">
   <img class="img-responsive" src="images/surf.jpg" alt="Surfboard">
   <div class="jumbotron">
     <h1>MOUNIVONGS Anousone</h1>
@@ -50,18 +50,14 @@
 </header>
 
 <!-- DIV ABOUT : A PROPOS  -->
-<div id="about" class="container-fluid">
-  <div class="row">
-    <div class="col-sm-8">
-      <h2>A PROPOS DE MOI</h2>
-      <blockquote>
-        <p>"Les espèces qui survivent ne sont pas les espèces les plus fortes, ni les plus intelligentes, mais celles qui s’adaptent le mieux aux changements."</p>
-        <footer>Charles Darwin</footer>
-      </blockquote>
-      <h4>Actuellement en plein préparation de mon titre.</h4>
-      <p>Actuellement en plein préparation dans le but d'obtenir un papier reconnu par l'état. Voila Voila :)</p>
-    </div>
-  </div>
+<div id="about" class="container-fluid text-center slideanim">
+  <h2>A PROPOS DE MOI</h2>
+  <blockquote>
+    <p>"Les espèces qui survivent ne sont pas les espèces les plus fortes, ni les plus intelligentes, mais celles qui s’adaptent le mieux aux changements."</p>
+    <footer>Charles Darwin</footer>
+  </blockquote>
+  <h4>Actuellement en plein préparation de mon titre.</h4>
+  <p>Actuellement en plein préparation dans le but d'obtenir un papier reconnu par l'état. Voila Voila :)</p>
 </div>
 
 <!-- DIV EXPERIENCE EN MODE CAROUSEL -->
@@ -189,9 +185,9 @@
 
 
 <!-- DIV PARCOURS / TIMELINE -->
-<div id="parcours" class="conteneur_timeline">
-  <h2>EXPERIENCE</h2>
+<div id="parcours" class="container-fluid">
   <div class="timeline">
+      <h2>EXPERIENCE</h2>
     <ul><!--Debut du contenu de la timeline-->
       <li>
         <div>
@@ -243,6 +239,7 @@
   <p>CV Numérique Anousone M. -Mars 2018-</p>
 </footer>
 
+
 <!-- Script pour le scrolling et la navbar"-->
 <script>
 $(document).ready(function(){
@@ -279,6 +276,12 @@ $(document).ready(function(){
     });
   });
 })
+
+</script>
+
+<!-- Script pour refermer la navbar lors d'un clic en version mobile-->
+<script>
+$('.nav a').click(function () { $("#myNavbar").collapse("hide") });
 </script>
 
 <!--Script de la Timeline-->
