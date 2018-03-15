@@ -26,6 +26,10 @@ h3 {
     margin-bottom: 30px;
 }
 
+blockquote p {
+  font-style: italic;
+}
+
 .jumbotron {
     background-color: #07575B;
     color: #fff;
@@ -46,33 +50,6 @@ h3 {
   height: 80px;
 }
 
-/*Carousel d'experience
-––––––––––––––––––––––––––––––––––––––––––––––––––––––––– */
-
-.carousel-control.right, .carousel-control.left {
-    background-image: none;
-    color: #003B46;
-}
-
-.carousel-indicators li {
-    border-color: #003B46;
-}
-
-.carousel-indicators li.active {
-    background-color: #003B46;
-}
-
-.item h4 {
-    font-size: 19px;
-    line-height: 1.375em;
-    font-weight: 400;
-    font-style: italic;
-    margin: 70px 0;
-}
-
-.item span {
-    font-style: normal;
-}
 /*Style de la Navbar du site
 ––––––––––––––––––––––––––––––––––––––––––––––––––––––––– */
 .navbar {
@@ -164,7 +141,7 @@ h3 {
   box-sizing: border-box;
 }
 
-#parcours{
+#experience{
   padding: 60px 0 0 0;
   background-color: #66A5AD;
   text-align: center;
