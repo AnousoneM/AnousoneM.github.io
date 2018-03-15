@@ -42,7 +42,7 @@
 
 <!-- DIV EN TETE DE MON SITE -->
 <div class="row text-center">
-  <img class="img-responsive" src="images/surf.jpg" alt="Surfboard">
+  <img class="img-responsive" src="images/background/surf.jpg" alt="Surfboard">
   <div class="jumbotron">
     <h1>MOUNIVONGS Anousone</h1>
     <p>#CV #Apprenti #Développeur</p>
@@ -57,9 +57,9 @@
     <p>"Les espèces qui survivent ne sont pas les espèces les plus fortes, ni les plus intelligentes, mais celles qui s’adaptent le mieux aux changements."</p>
     <footer>Charles Darwin</footer>
   </blockquote>
-  <h4>Fan de nouvelles technologies et du monde numérique, je suis une personne passionnée, curieuse et qui aime apprendre.<br>
+  <h3>Fan de nouvelles technologies et du monde numérique, je suis une personne passionnée, curieuse et qui aime apprendre.<br>
     Je suis actuellement en formation dans le but d'obtenir le titre professionnel, « Développeur-se logiciel  TP01280 » inscrit au RNCP 5927 Niveau III équivalent BAC+2.<br>
-    Pour résumer, je me prépare à devenir <strong>acteur</strong> pour ne plus être qu'un simple <strong>spectateur</strong>.</h4>
+    Pour résumer, je me prépare à devenir <strong>acteur</strong> pour ne plus être qu'un simple <strong>spectateur</strong>.</h3>
 </div>
 
 <!-- DIV EXPERIENCE / TIMELINE -->
@@ -196,7 +196,7 @@
   <div class="panel-group">
   <div class="panel panel-info slideanim">
     <div class="panel-heading"><i class="fas fa-graduation-cap"></i> BTS en Informatique de gestion : Etudes et Développement</div>
-      <div class="panel-body">Option : « Concepteur Développeur de Services Internet/Intranet ». (2002, diplômé)</div>
+      <div class="panel-body">Option : « Concepteur Développeur de Services Internet/Intranet ». (2002, diplômé)</div>
   </div>
   <div class="panel panel-info slideanim">
     <div class="panel-heading"><i class="fas fa-graduation-cap"></i> DEUG Mathématique Informatique et Application aux Sciences</div>
@@ -239,26 +239,21 @@ $(document).ready(function(){
     if (this.hash !== "") {
       // Prevent default anchor click behavior
       event.preventDefault();
-
       // Store hash
       var hash = this.hash;
-
       // Using jQuery's animate() method to add smooth page scroll
       // The optional number (900) specifies the number of milliseconds it takes to scroll to the specified area
       $('html, body').animate({
         scrollTop: $(hash).offset().top
       }, 900, function(){
-
         // Add hash (#) to URL when done scrolling (default click behavior)
         window.location.hash = hash;
       });
     } // End if
   });
-
   $(window).scroll(function() {
     $(".slideanim").each(function(){
       var pos = $(this).offset().top;
-
       var winTop = $(window).scrollTop();
         if (pos < winTop + 600) {
           $(this).addClass("slide");
@@ -266,7 +261,6 @@ $(document).ready(function(){
     });
   });
 })
-
 </script>
 
 <!-- Script pour refermer la navbar lors d'un clic en version mobile-->
@@ -277,12 +271,9 @@ $('.nav a').click(function () { $("#myNavbar").collapse("hide") });
 <!--Script de la Timeline-->
 <script>
 (function() {
-
   'use strict';
-
   // define variables
   var items = document.querySelectorAll(".timeline li");
-
   // check if an element is in viewport
   // http://stackoverflow.com/questions/123999/how-to-tell-if-a-dom-element-is-visible-in-the-current-viewport
   function isElementInViewport(el) {
@@ -294,7 +285,6 @@ $('.nav a').click(function () { $("#myNavbar").collapse("hide") });
       rect.right <= (window.innerWidth || document.documentElement.clientWidth)
     );
   }
-
   function callbackFunc() {
     for (var i = 0; i < items.length; i++) {
       if (isElementInViewport(items[i])) {
@@ -302,12 +292,10 @@ $('.nav a').click(function () { $("#myNavbar").collapse("hide") });
       }
     }
   }
-
   // listen for events
   window.addEventListener("load", callbackFunc);
   window.addEventListener("resize", callbackFunc);
   window.addEventListener("scroll", callbackFunc);
-
 })();
 </script>
 
