@@ -1,5 +1,48 @@
 /*Feuille CSS CV Numérique*/
 
+/*Effet Parallax
+––––––––––––––––––––––––––––––––––––––––––––––––––––––––– */
+#parallax0 {
+    /* Image used */
+    background-image: url("images/background/surf.jpg");
+
+    /* Set a specific height */
+    height: 400px;
+
+    /* The parallax scrolling effect */
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+#parallax1 {
+    background-image: url("images/background/surf.jpg");
+    height: 500px;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+#parallax2 {
+    background-image: url("images/background/mousse.jpg");
+    height: 500px;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+#parallax3 {
+    background-image: url("images/background/wave.jpg");
+    height: 500px;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
 body {
     font: 400 15px Lato, sans-serif;
     line-height: 1.8;
@@ -50,9 +93,6 @@ blockquote p {
     padding: 60px 50px;
 }
 
-.bg-grey { /*fond bleu clair de certaines sections*/
-    background-color: #66A5AD;
-}
 
 #competences img{
   height: 80px;
@@ -151,13 +191,13 @@ blockquote p {
 
 #experience{
   padding: 60px 0 0 0;
-  background-color: #66A5AD;
+/*  background-color: #FFF;*/
   text-align: center;
   overflow-x: hidden;
 }
 
 .timeline ul {
-  background: #66A5AD; /* couleur de fond du background de la timeline */
+  background: #FFF; /* couleur de fond du background de la timeline */
   padding: 50px 0;
 }
 
