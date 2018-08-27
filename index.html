@@ -1,95 +1,323 @@
 <!DOCTYPE html>
-<html>
-<head>
-<link href='https://fonts.googleapis.com/css?family=Montserrat|Cardo' rel='stylesheet' type='text/css'>
-<link href='style.css' rel='stylesheet' type='text/css'>
-<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
-<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
-</head>
+<html lang="fr">
+    <head>
+        <title>Moun.</title>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <!--Liens vers Library externe-->
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" />
+        <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet" type="text/css" />
+        <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet" type="text/css" />
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+        <script defer src="https://use.fontawesome.com/releases/v5.0.8/js/all.js"></script>
 
-<header class="main_h">
+        <link href="https://cdn.rawgit.com/michalsnik/aos/2.1.1/dist/aos.css" rel="stylesheet" />
+        <script src="https://cdn.rawgit.com/michalsnik/aos/2.1.1/dist/aos.js"></script>
 
-    <div class="row">
-        <a class="logo" href="#">P/F</a>
+        <!--Feuille de style maison -->
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <body id="myPage" data-spy="scroll" data-target=".navbar" data-offset="60">
 
-        <div class="mobile-toggle">
-            <span></span>
-            <span></span>
-            <span></span>
+        <header>
+            <!-- NAVBAR RESPONSIVE  -->
+            <nav class="navbar navbar-default navbar-fixed-top">
+                <div class="container">
+                    <div class="navbar-header">
+                        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+                            <span class="icon-bar"></span>
+                            <span class="icon-bar"></span>
+                            <span class="icon-bar"></span>
+                        </button>
+                        <a class="navbar-brand" href="#myPage"><i class="far fa-moon"></i> Moun.</a>
+                    </div>
+                    <div class="collapse navbar-collapse" id="myNavbar">
+                        <ul class="nav navbar-nav navbar-right">
+                            <li><a href="#about">"Me"</a></li>
+                            <li><a href="#experience">EXPERIENCE</a></li>
+                            <li><a href="#competences">COMPETENCES</a></li>
+                            <li><a href="#parcours">PARCOURS</a></li>
+                            <li><a href="#contact">CONTACT</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </nav>
+
+            <div id="parallax0"></div> <!--Effet Parallax !!!! :)-->
+
+            <!-- DIV EN TETE DE MON SITE -->
+            <div class="row text-center">
+                <div class="jumbotron">
+                    <h1>MOUNIVONGS Anousone</h1>
+                    <p>#CV #Développeur #Fullstack</p>
+                </div>
+            </div>
+        </header>
+
+        <!-- DIV ABOUT : A PROPOS  -->
+        <div id="about" class="container-fluid text-center slideanim">
+            <h2>A PROPOS DE MOI</h2>
+            <blockquote>
+                <p>"Les espèces qui survivent ne sont pas les espèces les plus fortes, ni les plus intelligentes, mais celles qui s’adaptent le mieux aux changements."</p>
+                <footer>Charles Darwin</footer>
+            </blockquote>
+            <h3>Fan de nouvelles technologies et du monde numérique, je suis une personne passionnée, curieuse et qui aime apprendre.<br>
+                Je suis actuellement en formation dans le but d'obtenir le titre professionnel, « Développeur-se logiciel  TP01280 » inscrit au RNCP 5927 Niveau III équivalent BAC+2.<br>
+                Pour résumer, je me prépare à devenir <strong>acteur</strong> pour ne plus être qu'un simple <strong>spectateur</strong>.</h3>
         </div>
 
-        <nav>
-            <ul>
-                <li><a href=".sec01">Section 01</a></li>
-                <li><a href=".sec02">Section 02</a></li>
-                <li><a href=".sec03">Section 03</a></li>
-                <li><a href=".sec04">Section 04</a></li>
-            </ul>
-        </nav>
+        <div class="parallax1"></div>
 
-    </div> <!-- / row -->
+        <!-- DIV EXPERIENCES / TIMELINE -->
+        <div id="experience" class="container-fluid">
+            <div>
+                <h2>EXPERIENCE</h2>
+                <ul><!--Debut du contenu de la timeline-->
+                    <li>
+                        <div data-aos="fade-left">
+                            <p><strong>Formation Développeur de sites et applications Web (2018)</strong></p>
+                            <p class="experience-details"><span class="details">Actuellement en formation profesionnelle.</span></p>
+                        </div>
+                    </li>
+                    <li>
+                        <div data-aos="fade-left">
+                            <p><strong>Titre professionnel « Développeuse logiciel » certifié RNCP Niveau III (2018)</strong></p>
+                            <p class="experience-details"><span class="details">En pleine préparation du titre professionnel.</span></p>
+                        </div>
+                    </li>
+                    <li>
+                        <div data-aos="fade-left">
+                            <p><strong>Responsable qualité et formation (depuis 2011)</strong></p>
+                            <p class="experience-details"><span class="details">Call Center WEBHELP.</span></p>
+                        </div>
+                    </li>
+                    <li>
+                        <div data-aos="fade-left">
+                            <p><strong>BTS en Informatique de gestion « Concepteur Développeur de Service Interner/Intranet » (2002)</strong></p>
+                            <p class="experience-details"><span class="details">Stage professionnel dans une Web Agency durant 2 mois.</span></p>
+                        </div>
+                    </li>
+                </ul><!--fin du contenu de la timeline-->
+            </div>
+        </div>
 
-</header>
+        <div id="parallax2"></div>
 
-<div class="hero">
+        <!-- DIV COMPETENCES / Language, OS, Etc -->
+        <div id="competences" class="container-fluid text-center">
+            <h2>COMPETENCES</h2>
+            <!--OS et Systeme d'exploitation-->
+            <h3>OS / Système d'exploitation</h3>
+            <div class="row" data-aos="fade-up">
+                <div class="col-sm-3"></div>
+                <div class="col-sm-2">
+                    <img class="image-responsive" src="images/icones/windows.svg" alt="Icone Windows">
+                    <h4>Windows</h4>
+                    <p><span style="color:#FFCD2B">★★★★</span>★</p>
+                </div>
+                <div class="col-sm-2">
+                    <img class="image-responsive" src="images/icones/linux.svg" alt="Icone Linux">
+                    <h4>Linux</h4>
+                    <p><span style="color:#FFCD2B">★★★</span>★★</p>
+                </div>
+                <div class="col-sm-2">
+                    <img class="image-responsive" src="images/icones/iOS.svg" alt="Icone iOS">
+                    <h4>iOS</h4>
+                    <p><span style="color:#FFCD2B">★★★★</span>★</p>
+                </div>
+                <div class="col-sm-3"></div>
+            </div>
+            <br />
+            <!--Versionning -->
+            <h3>Versionning</h3>
+            <div class="row" data-aos="fade-up">
+                <div class="col-sm-4"></div>
+                <div class="col-sm-2">
+                    <img class="image-responsive" src="images/icones/git.svg" alt="Icone Git">
+                    <h4>Git</h4>
+                    <p><span style="color:#FFCD2B">★★★★</span>★</p>
+                </div>
+                <div class="col-sm-2">
+                    <img class="image-responsive" src="images/icones/github.svg" alt="Icone GitHub">
+                    <h4>GitHub</h4>
+                    <p><span style="color:#FFCD2B">★★★★</span>★</p>
+                </div>
+                <div class="col-sm-4"></div>
+            </div>
+            <br />
+            <!--Langage et Library -->
+            <h3>Languages & Library</h3>
+            <div class="row" data-aos="fade-up">
+                <div class="col-sm-3"></div>
+                <div class="col-sm-2">
+                    <img class="image-responsive" src="images/icones/html5.svg" alt="Icone HTML5">
+                    <h4>HTML5</h4>
+                    <p><span style="color:#FFCD2B">★★★★★</span></p>
+                </div>
+                <div class="col-sm-2">
+                    <img class="image-responsive" src="images/icones/css3.svg" alt="Icone CSS3">
+                    <h4>CSS3</h4>
+                    <p><span style="color:#FFCD2B">★★★★★</span></p>
+                </div>
+                <div class="col-sm-2">
+                    <img class="image-responsive" src="images/icones/bootstrap.svg" alt="Icone BootStrap">
+                    <h4>Bootstrap</h4>
+                    <p><span style="color:#FFCD2B">★★★★</span>★</p>
+                </div>
+                <div class="col-sm-3"></div>
+            </div>
+            <div class="row" data-aos="fade-up">
+                <div class="col-sm-3"></div>
+                <div class="col-sm-2">
+                    <img class="image-responsive" src="images/icones/javascript.svg" alt="Icone Javascript">
+                    <h4>Javascript</h4>
+                    <p><span style="color:#FFCD2B">★★★★</span>★</p>
+                </div>
+                <div class="col-sm-2">
+                    <img class="image-responsive" src="images/icones/jquery.svg" alt="Icone JQuery">
+                    <h4>JQuery</h4>
+                    <p><span style="color:#FFCD2B">★★★★</span>★</p>
+                </div>
+                <div class="col-sm-2">
+                    <img class="image-responsive" src="images/icones/angularjs.svg" alt="Icone AngularJs">
+                    <h4>AngularJs</h4>
+                    <p><span style="color:#FFCD2B">★★★★</span>★</p>
+                </div>
+                <div class="col-sm-3"></div>
+            </div>
+            <div class="row" data-aos="fade-up">
+                <div class="col-sm-4"></div>
+                <div class="col-sm-2">
+                    <img class="image-responsive" src="images/icones/php.svg" alt="Icone Php">
+                    <h4>Php</h4>
+                    <p><span style="color:#FFCD2B">★★★★</span>★</p>
+                </div>
+                <div class="col-sm-2">
+                    <img class="image-responsive" src="images/icones/mysql.svg" alt="Icone MySQL">
+                    <h4>MySQL</h4>
+                    <p><span style="color:#FFCD2B">★★★★</span>★</p>
+                </div>
+                <div class="col-sm-4"></div>
+            </div>
+        </div>
 
-    <h1><span>I'm a cool</span><br>Navigation</h1>
+        <div id="parallax3"></div>
 
-    <div class="mouse">
-        <span></span>
-    </div>
+        <!-- DIV PARCOURS en mode PANEL-->
+        <div id="parcours" class="container-fluid text-center">
+            <h2>PARCOURS</h2>
+            <div class="panel-group">
+                <div class="panel panel-info" data-aos="fade-up-left">
+                    <div class="panel-heading"><i class="fas fa-graduation-cap"></i> BTS en Informatique de gestion : Etudes et Développement</div>
+                    <div class="panel-body">Option : « Concepteur Développeur de Services Internet/Intranet ». (2002, diplômé)</div>
+                </div>
+                <div class="panel panel-info" data-aos="fade-up-right">
+                    <div class="panel-heading"><i class="fas fa-graduation-cap"></i> DEUG Mathématique Informatique et Application aux Sciences</div>
+                    <div class="panel-body">1ère Année, option EEA et Informatique. (2000 - 2001, niveau)</div>
+                </div>
+                <div class="panel panel-info" data-aos="fade-up-left">
+                    <div class="panel-heading"><i class="fas fa-graduation-cap"></i> BAC STI Génie Civil</div>
+                    <div class="panel-body">Science des Techniques Industrielles. (1999, diplômé)</div>
+                </div>
+            </div>
+        </div>
 
-</div>
+        <div class="parallax1"></div>
 
-<div class="row content">
-    <h1 class="sec01">Section 01</h1>
-    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nostrum, recusandae, at, labore velit eligendi amet nobis repellat natus sequi sint consectetur excepturi doloribus vero provident consequuntur accusamus quisquam nesciunt cupiditate soluta alias illo et deleniti voluptates facilis repudiandae similique dolore quaerat architecto perspiciatis officiis dolor ullam expedita suscipit neque minima rem praesentium inventore ab officia quos dignissimos esse quam placeat iste porro eius! Minus, aspernatur nesciunt consectetur. Sit, eius, itaque, porro, beatae impedit officia tenetur reiciendis autem vitae a quae ipsam repudiandae odio dolorum quaerat asperiores possimus corporis optio animi quisquam laboriosam nihil quam voluptatum quidem veritatis iste culpa iure modi perspiciatis recusandae ipsa libero officiis aliquam doloremque similique id quasi atque distinctio enim sapiente ratione in quia eum perferendis earum blanditiis. Nobis, architecto, veniam molestias minus iste necessitatibus est ab in earum ratione eveniet soluta molestiae sed illo nostrum nemo debitis. Minus, quod totam aliquam ea asperiores fugit quaerat excepturi dolores ratione numquam consequatur id unde alias provident vero incidunt exercitationem similique consequuntur hic possimus? Fuga, eveniet quaerat inventore corporis laborum eligendi enim soluta obcaecati aliquid veritatis provident amet laudantium est quisquam dolore exercitationem modi? Distinctio, pariatur, ab velit praesentium vitae quidem consequatur deleniti recusandae odit officiis. Quidem, cupiditate.</p>
-    <h1 class="sec02">Section 02</h1>
-    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nostrum, recusandae, at, labore velit eligendi amet nobis repellat natus sequi sint consectetur excepturi doloribus vero provident consequuntur accusamus quisquam nesciunt cupiditate soluta alias illo et deleniti voluptates facilis repudiandae similique dolore quaerat architecto perspiciatis officiis dolor ullam expedita suscipit neque minima rem praesentium inventore ab officia quos dignissimos esse quam placeat iste porro eius! Minus, aspernatur nesciunt consectetur. Sit, eius, itaque, porro, beatae impedit officia tenetur reiciendis autem vitae a quae ipsam repudiandae odio dolorum quaerat asperiores possimus corporis optio animi quisquam laboriosam nihil quam voluptatum quidem veritatis iste culpa iure modi perspiciatis recusandae ipsa libero officiis aliquam doloremque similique id quasi atque distinctio enim sapiente ratione in quia eum perferendis earum blanditiis. Nobis, architecto, veniam molestias minus iste necessitatibus est ab in earum ratione eveniet soluta molestiae sed illo nostrum nemo debitis. Minus, quod totam aliquam ea asperiores fugit quaerat excepturi dolores ratione numquam consequatur id unde alias provident vero incidunt exercitationem similique consequuntur hic possimus? Fuga, eveniet quaerat inventore corporis laborum eligendi enim soluta obcaecati aliquid veritatis provident amet laudantium est quisquam dolore exercitationem modi? Distinctio, pariatur, ab velit praesentium vitae quidem consequatur deleniti recusandae odit officiis. Quidem, cupiditate.</p>
-    <h1 class="sec03">Section 03</h1>
-    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nostrum, recusandae, at, labore velit eligendi amet nobis repellat natus sequi sint consectetur excepturi doloribus vero provident consequuntur accusamus quisquam nesciunt cupiditate soluta alias illo et deleniti voluptates facilis repudiandae similique dolore quaerat architecto perspiciatis officiis dolor ullam expedita suscipit neque minima rem praesentium inventore ab officia quos dignissimos esse quam placeat iste porro eius! Minus, aspernatur nesciunt consectetur. Sit, eius, itaque, porro, beatae impedit officia tenetur reiciendis autem vitae a quae ipsam repudiandae odio dolorum quaerat asperiores possimus corporis optio animi quisquam laboriosam nihil quam voluptatum quidem veritatis iste culpa iure modi perspiciatis recusandae ipsa libero officiis aliquam doloremque similique id quasi atque distinctio enim sapiente ratione in quia eum perferendis earum blanditiis. Nobis, architecto, veniam molestias minus iste necessitatibus est ab in earum ratione eveniet soluta molestiae sed illo nostrum nemo debitis. Minus, quod totam aliquam ea asperiores fugit quaerat excepturi dolores ratione numquam consequatur id unde alias provident vero incidunt exercitationem similique consequuntur hic possimus? Fuga, eveniet quaerat inventore corporis laborum eligendi enim soluta obcaecati aliquid veritatis provident amet laudantium est quisquam dolore exercitationem modi? Distinctio, pariatur, ab velit praesentium vitae quidem consequatur deleniti recusandae odit officiis. Quidem, cupiditate.</p>
-    <h1 class="sec04">Section 04</h1>
-    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nostrum, recusandae, at, labore velit eligendi amet nobis repellat natus sequi sint consectetur excepturi doloribus vero provident consequuntur accusamus quisquam nesciunt cupiditate soluta alias illo et deleniti voluptates facilis repudiandae similique dolore quaerat architecto perspiciatis officiis dolor ullam expedita suscipit neque minima rem praesentium inventore ab officia quos dignissimos esse quam placeat iste porro eius! Minus, aspernatur nesciunt consectetur. Sit, eius, itaque, porro, beatae impedit officia tenetur reiciendis autem vitae a quae ipsam repudiandae odio dolorum quaerat asperiores possimus corporis optio animi quisquam laboriosam nihil quam voluptatum quidem veritatis iste culpa iure modi perspiciatis recusandae ipsa libero officiis aliquam doloremque similique id quasi atque distinctio enim sapiente ratione in quia eum perferendis earum blanditiis. Nobis, architecto, veniam molestias minus iste necessitatibus est ab in earum ratione eveniet soluta molestiae sed illo nostrum nemo debitis. Minus, quod totam aliquam ea asperiores fugit quaerat excepturi dolores ratione numquam consequatur id unde alias provident vero incidunt exercitationem similique consequuntur hic possimus? Fuga, eveniet quaerat inventore corporis laborum eligendi enim soluta obcaecati aliquid veritatis provident amet laudantium est quisquam dolore exercitationem modi? Distinctio, pariatur, ab velit praesentium vitae quidem consequatur deleniti recusandae odit officiis. Quidem, cupiditate.</p>
-</div>
+        <!-- DIV CONTACT SECTION , MAIL, CV -->
+        <div id="contact" class="container-fluid">
+            <h2 class="text-center">CONTACT</h2>
+            <div class="row">
+                <div class="col-sm-4"></div>
+                <div class="linkedin text-center col-sm-4"><a href="http://www.linkedin.com/in/anousone-mounivongs"><i class="fab fa-linkedin"></i></a></div>
+                <div class="col-sm-4"></div>
+            </div>
+        </div>
 
-<script>
-// Sticky Header
-$(window).scroll(function() {
+        <!-- DIV FOOTER / COPYRIGHT / -->
+        <footer id="copyright" class="container-fluid text-center">
+            <a href="#myPage" title="To go Top">
+                <span class="glyphicon glyphicon-chevron-up"></span>
+            </a>
+            <p>Tous droits réservés - Anousone M.</p>
+        </footer>
 
-    if ($(window).scrollTop() > 100) {
-        $('.main_h').addClass('sticky');
-    } else {
-        $('.main_h').removeClass('sticky');
-    }
-});
 
-// Mobile Navigation
-$('.mobile-toggle').click(function() {
-    if ($('.main_h').hasClass('open-nav')) {
-        $('.main_h').removeClass('open-nav');
-    } else {
-        $('.main_h').addClass('open-nav');
-    }
-});
+        <!-- Script pour le scrolling et la navbar smooth"-->
+        <script>
+            $(document).ready(function () {
+                // Add smooth scrolling to all links in navbar + footer link
+                $(".navbar a, footer a[href='#myPage']").on('click', function (event) {
+                    // Make sure this.hash has a value before overriding default behavior
+                    if (this.hash !== "") {
+                        // Prevent default anchor click behavior
+                        event.preventDefault();
+                        // Store hash
+                        var hash = this.hash;
+                        // Using jQuery's animate() method to add smooth page scroll
+                        // The optional number (900) specifies the number of milliseconds it takes to scroll to the specified area
+                        $('html, body').animate({
+                            scrollTop: $(hash).offset().top
+                        }, 900, function () {
+                            // Add hash (#) to URL when done scrolling (default click behavior)
+                            window.location.hash = hash;
+                        });
+                    } // End if
+                });
+                $(window).scroll(function () {
+                    $(".slideanim").each(function () {
+                        var pos = $(this).offset().top;
+                        var winTop = $(window).scrollTop();
+                        if (pos < winTop + 600) {
+                            $(this).addClass("slide");
+                        }
+                    });
+                });
+            });
+        </script>
 
-$('.main_h li a').click(function() {
-    if ($('.main_h').hasClass('open-nav')) {
-        $('.navigation').removeClass('open-nav');
-        $('.main_h').removeClass('open-nav');
-    }
-});
+        <!-- Script pour refermer la navbar lors d'un clic en version mobile-->
+        <script>
+            $('.nav a').click(function () {
+                $("#myNavbar").collapse("hide")
+            });
+        </script>
 
-// navigation scroll lijepo radi materem
-$('nav a').click(function(event) {
-    var id = $(this).attr("href");
-    var offset = 70;
-    var target = $(id).offset().top - offset;
-    $('html, body').animate({
-        scrollTop: target
-    }, 500);
-    event.preventDefault();
-});
-</script>
+        <!--Script de la Timeline-->
+        <script>
+            (function () {
+                'use strict';
+                // define variables
+                var items = document.querySelectorAll(".timeline li");
+                // check if an element is in viewport
+                // http://stackoverflow.com/questions/123999/how-to-tell-if-a-dom-element-is-visible-in-the-current-viewport
+                function isElementInViewport(el) {
+                    var rect = el.getBoundingClientRect();
+                    return (
+                            rect.top >= 0 &&
+                            rect.left >= 0 &&
+                            rect.bottom <= (window.innerHeight || document.documentElement.clientHeight) &&
+                            rect.right <= (window.innerWidth || document.documentElement.clientWidth)
+                            );
+                }
+                function callbackFunc() {
+                    for (var i = 0; i < items.length; i++) {
+                        if (isElementInViewport(items[i])) {
+                            items[i].classList.add("in-view");
+                        }
+                    }
+                }
+                // listen for events
+                window.addEventListener("load", callbackFunc);
+                window.addEventListener("resize", callbackFunc);
+                window.addEventListener("scroll", callbackFunc);
+            })();
+        </script>
+
+        <script>
+            AOS.init();
+        </script>
+
+    </body>
 </html>
